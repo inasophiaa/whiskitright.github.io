@@ -1,0 +1,415 @@
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Century Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  color: #3e2f1c;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Header */
+.header {
+  background-color: rgba(92, 58, 33, 0.9);
+  border-bottom: 2.5px solid #d2b48c;
+}
+
+.head {
+  background-image: url('images/header.svg');
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: sienna;
+  padding: 0.2rem 2rem;
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-top: 4px solid #c2a478;
+  border-radius: 12px 12px 0 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #F0E9E3;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #8b4513;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #5c3d1b;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom right, #f5f5dc, #f2e1c1);
+  color: #5c4033;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-bottom: 4px solid #d2b48c;
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.2);
+  border-radius: 0 0 16px 16px;
+  font-family: Century Gothic, sans-serif;
+  font-style: italic;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  margin: 0;
+  color: #8b4513;
+  text-shadow: 1px 1px #deb887;
+}
+
+.hero p {
+  font-size: 1.7rem;
+  padding: 0 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #4b3621;
+}
+
+/* Link Cards */
+.link-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.link-card {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  text-decoration: none;
+  color: #5c3d1b;
+  border: 1px solid #e0c9a6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.1);
+  background-color: #fffaf3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.link-card h3 {
+  margin: 1rem 0;
+  font-family: Century Gothic, serif;
+  font-size: 1.4rem;
+}
+
+.link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(139, 69, 19, 0.2);
+}
+
+/* About Section */
+.hero-about{
+	text-align: center;
+}
+.hero-about h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #4b2e1e;
+    }
+
+    .hero-about h2 {
+      font-size: 1.5em;
+      font-style: italic;
+      margin-top: 0;
+      color: #6a4b3b;
+    }
+
+    .hero-about p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #5c3b2a;
+    }
+.cake-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #fffdf9;
+}
+
+.cake-box {
+  width: 250px;
+  text-align: center;
+}
+
+.cake-box img {
+  width: 300px;
+  height: 180px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cake-box p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4b2e1e;
+  text-align: center;
+}
+
+/* Recipes Section */
+.recipes_container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.recipe {
+  background-color: #fff8ec;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+  transition: transform 0.3s ease;
+}
+
+.recipe:hover {
+  transform: translateY(-5px);
+}
+
+.recipe h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.recipe img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.recipe img:hover {
+  transform: scale(1.02);
+}
+
+.recipe h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #6b4226;
+}
+
+.recipe ul, .recipe ol {
+  padding-left: 20px;
+}
+
+/* Back to Top Button */
+.top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #e2c397;
+  color: #4b2e1e;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.top-btn:hover {
+  background-color: #d3ab72;
+}
+
+/* Tutorials Section */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #3e2615;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.video-item {
+  background-color: #fff8ec;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(92, 58, 33, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(92, 58, 33, 0.2);
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+}
+
+.video-title {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #5c3a21;
+}
+
+/* Quiz Section */
+.quiz {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-image: url('images/bground.svg');
+  background-size: cover;
+  background-position: center;
+  border-top: 5px solid #6d4c41;
+}
+
+.quiz h2 {
+  font-size: 3rem;
+  color: #4e342e;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.quiz-card {
+  width: 250px;
+  padding: 2rem;
+  background-color: #fff8f0;
+  border: 2px solid #d7ccc8;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #4e342e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.quiz-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background-color: #fff3e0;
+}
+
+.quiz-card h3 {
+  font-family: 'Century Gothic', sans-serif;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.quiz-card p {
+  font-size: 1.2rem;
+  color: #6d4c41;
+}
+
+/* Footer */
+.footer {
+  font-family: 'Century Gothic', sans-serif;
+  background: sienna;
+  color: #fff;
+  padding: 2rem 2rem 1rem;
+  border-top: 2px solid #d2b48c;
+  margin-top: 1rem;
+}
+
+.footer-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-layout {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-contact h4 {
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+  color: #ffd7b5;
+}
+
+.footer-contact p,
+.footer-contact a {
+  margin: 0.2rem 0;
+  color: #ffe4d1;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+  color: #fff0e1;
+}
+
+.footer-bottom {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #f8e6db;
+  border-top: 1px solid beige;
+  padding-top: 0.5rem;
+}
