@@ -268,6 +268,23 @@ body {
   background-color: #d3ab72;
 }
 
+/*Location Section*/
+.location{
+	margin: 100px;
+
+.location-images {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 15px;
+}
+
+.location-image {
+    width: 50%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 /* Tutorials Section */
 .section-title {
   text-align: center;
