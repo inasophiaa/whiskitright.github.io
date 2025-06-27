@@ -271,6 +271,7 @@ body {
 /*Location Section*/
 .location{
 	margin: 100px;
+}
 
 .location-images {
     display: flex;
